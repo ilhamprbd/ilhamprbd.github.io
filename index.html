@@ -613,9 +613,12 @@
 
     // default example
     simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
+     //   year: d.getFullYear(),
+     //  month: d.getMonth() + 1,
+     //   day: d.getDate()
+	 year : "2022",
+	 month: "08",
+	 day: "30"
     });
 
     //jQuery example
@@ -623,7 +626,7 @@
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate(),
-        enableUtc: false
+        enableUtc: true
     });
 </script>
 
