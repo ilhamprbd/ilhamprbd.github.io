@@ -6,7 +6,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Ilham & Oula Wedding</title>
+	<title>Wedding &mdash; 100% Free Fully Responsive HTML5 Template by FREEHTML5.co</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
 	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
@@ -115,6 +115,12 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1>Ilham &amp; Oula</h1>
 							<h2>We Are Getting Married</h2>
+							<div>
+							<!-- 	<p id="days"></p>
+								<p id="hours"></p>
+								<p id="minutes"></p>
+								<p id="seconds"></p> -->
+							</div>
 							<div class="simply-countdown simply-countdown-one"></div>
 							<p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
 						</div>
@@ -136,7 +142,7 @@
 			<div class="couple-wrap animate-box">
 				<div class="couple-half">
 					<div class="groom">
-						<img src="images/groom.jpg" alt="groom" class="img-responsive">
+						<img src="https://media-exp1.licdn.com/dms/image/C5603AQER1CwXUkQF3A/profile-displayphoto-shrink_200_200/0/1601532477700?e=1667433600&v=beta&t=JmH_yGAH86QnSIgZ17l31VMtlwjg1eISzMTx9oLGzUg" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-groom">
 						<h3>Muhamad Ilham Pribadi</h3>
@@ -146,7 +152,7 @@
 				<p class="heart text-center"><i class="icon-heart2"></i></p>
 				<div class="couple-half">
 					<div class="bride">
-						<img src="images/bride.jpg" alt="groom" class="img-responsive">
+						<img src="https://media-exp1.licdn.com/dms/image/C5603AQEN-AOQJP86JQ/profile-displayphoto-shrink_200_200/0/1587800055395?e=1667433600&v=beta&t=GfZMAT1004oZWExn0VY65MYRXD79FjEp9coWCoVfl1o" alt="groom" class="img-responsive">
 					</div>
 					<div class="desc-bride">
 						<h3>Oula Falahiyah</h3>
@@ -611,17 +617,14 @@
 	<script>
     var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-	//https://www.free-css.com/free-css-templates/page227/wedding
     // default example
     simplyCountdown('.simply-countdown-one', {
-     //   year: d.getFullYear(),
-     //  month: d.getMonth() + 1,
-     //   day: d.getDate()
-	 year : "2022",
-	 month: "8",
-	 day: "3",
-	 hour: "13:00"
-	// hour : "08:00"
+        year: 2022,
+        month: 9,
+        day: 2,
+		hours: 17,
+        minutes: 0,
+        seconds: 0
     });
 
     //jQuery example
@@ -629,8 +632,29 @@
         year: d.getFullYear(),
         month: d.getMonth() + 1,
         day: d.getDate(),
-        enableUtc: false
+        enableUtc: true
     });
+	
+	/*
+    var endDate = new Date('Sep 1, 2022 02:02:03').getTime();
+	var countDownTimer = setInterval(() => {
+											var now = new Date().getTime();
+											var remainingTime = endDate - now;
+											const second = 1000;
+											const minute = second * 60;
+											const hour = minute * 60;
+											const day = hour * 24;
+											daysLeft = Math.trunc(remainingTime / day);
+											hoursLeft = Math.trunc((remainingTime % day) / hour);
+											minutesLeft = Math.trunc((remainingTime % hour) / minute);
+											secondsLeft = Math.trunc((remainingTime % minute) / second);
+											document.querySelector('#days').innerHTML = daysLeft + ' Days';
+											document.querySelector('#hours').innerHTML = hoursLeft + ' Hours';
+											document.querySelector('#minutes').innerHTML = minutesLeft + ' Minutes';
+											document.querySelector('#seconds').innerHTML = secondsLeft + ' Seconds';
+												if (remainingTime <= 0) { document.write('Time Up!');}
+											}, 1000);
+											*/
 </script>
 
 	</body>
